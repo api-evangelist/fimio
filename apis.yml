@@ -1,7 +1,29 @@
 aid: fimio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fimio.png
 name: Fimio
-description: Fimio is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fimio was a developer-tooling startup founded in 2022 in Oakland, California by
+  Omoju Miller (formerly of Google and GitHub). Its first product was an ML-trained
+  fraud-detection / malicious-smart-contract reputation API for Web3 builders
+  (Ethereum), with data supported by Spice AI, released as an alpha. The company
+  later repositioned around "collaborative tooling for serverful applications" and
+  "reproducible builds made easy." Fimio appears to be defunct: as of the enrichment
+  probe both fimio.xyz and www.fimio.xyz 302-redirect to google.com, the docs/api
+  subdomains do not resolve, the blog returns 404, and the GitHub organization
+  (fimio-xyz) was archived on 2026-01-27 with only Careers and feedback repositories
+  and no published API artifacts. It was backed by a ~$2.19M seed led by Neo with
+  Redpoint Ventures, Protocol Labs, The House Fund and angel investors.
 url: https://raw.githubusercontent.com/api-evangelist/fimio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,22 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence: >-
+  fimio.xyz + www.fimio.xyz 302 -> google.com; docs./api. subdomains unresolved;
+  /blog 404; GitHub org fimio-xyz archived 2026-01-27 (no API artifacts). Probed 2026-07-19.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Developer Tools
+- Web3
+- Fraud Detection
+- Smart Contracts
+- Ethereum
+- Reproducible Builds
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,12 @@ maintainers:
 common:
 - type: Website
   url: https://fimio.xyz/
+- type: GitHubOrganization
+  url: https://github.com/fimio-xyz
+- type: LinkedIn
+  url: https://www.linkedin.com/company/fimio
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
